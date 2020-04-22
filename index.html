@@ -1,24 +1,31 @@
 <html>
 	<head>
 		<title>Emily Gosti</title>
-		<!-- <style type="text/css">
-		    @font-face {
-		        font-family: "Gotham";
-		        src: url(assets/GothamBook.otf) format("opentype");
-		    }
-	    </style> -->
 		<link rel="icon" href="assets/img/charmander.png">
 		<link rel="stylesheet" type="text/css" href="assets/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Catamaran:400,800|Inconsolata&display=swap" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
 		<script src="assets/animate.js"></script>
+		<script>
+			var changed = false;
+		    function changeImage() {
+		        if (!changed) {
+		            document.getElementById("home_pic").src = "assets/img/acnh.jpg";
+		            changed = true;
+		        }
+		        else {
+		            document.getElementById("home_pic").src = "assets/img/emily.jpg";
+		            changed = false;
+		        }
+		    }
+		</script>
 	</head>
 
 	<body>
 		<div class="page_container">
 			<div class="home_title"><b>Hello.</b></div>
-			<div class="home_description">I'm <div class="highlight" id="name">Emily</div>, an EECS student at UC Berkeley.</div>
+			<div class="home_description">I'm <div class="highlight" id="name" onclick="changeImage()">Emily</div>, an EECS student at UC Berkeley.</div>
 			<img src="assets/img/emily.jpg" id="home_pic">
 			<div class="home_media labels">Instagram:<br><br>Twitter:</div>
 			<div class="home_media handles">@emgosti<br><br>@emilygosti</div>

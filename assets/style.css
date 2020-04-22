@@ -1,8 +1,3 @@
-@font-face {
-    font-family: "GothamBold";
-    src: url("assets/GothamBold.otf") format("opentype");
-}
-
 html, body {
 	width: 100%;
 	height: 100%;
@@ -21,7 +16,8 @@ html, body {
 }
 
 .home_title {
-	font-family: 'GothamBold';
+	font-family: 'Catamaran', sans-serif;
+	font-weight: 800;
 	font-size: 128px;
 	grid-column-start: 2;
 	grid-column-end: 4;
@@ -137,7 +133,8 @@ html, body {
 }
 
 .work_title {
-	font-family: 'GothamBold';
+	font-family: 'Catamaran', sans-serif;
+	font-weight: 800;
 	font-size: 128px;
 	grid-column-start: 2;
 	grid-column-end: 5;
