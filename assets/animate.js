@@ -10,20 +10,32 @@ $(document).ready(function() {
 
   $("#box_1 .box_cover").hover(function() {
     $("#img_1").fadeIn();
+    $("#box_2 .work_title").css("opacity", "0.3");
+    $("#box_3 .work_title").css("opacity", "0.3");
   }, function() {
     $("#img_1").fadeOut();
+    $("#box_2 .work_title").css("opacity", "1");
+    $("#box_3 .work_title").css("opacity", "1");
   });
 
   $("#box_2 .box_cover").hover(function() {
     $("#img_2").fadeIn();
+    $("#box_1 .work_title").css("opacity", "0.3");
+    $("#box_3 .work_title").css("opacity", "0.3");
   }, function() {
     $("#img_2").fadeOut();
+    $("#box_1 .work_title").css("opacity", "1");
+    $("#box_3 .work_title").css("opacity", "1");
   });
 
   $("#box_3 .box_cover").hover(function() {
     $("#img_3").fadeIn();
+    $("#box_1 .work_title").css("opacity", "0.3");
+    $("#box_2 .work_title").css("opacity", "0.3");
   }, function() {
     $("#img_3").fadeOut();
+    $("#box_1 .work_title").css("opacity", "1");
+    $("#box_2 .work_title").css("opacity", "1");
   });
 
   $('#name').mousemove(function(event){

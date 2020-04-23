@@ -109,7 +109,7 @@ html, body {
 	height: 150%;
 	min-height: 1200px;
 	display: grid;
-	grid-template-columns: 10% 10% auto 20% 10%;
+	grid-template-columns: 10% 10% 30% 20% 20% 10%;
 	grid-template-rows: 10% 10% 300px 300px 300px 300px auto;
 }
 
@@ -118,7 +118,7 @@ html, body {
 	height: 300px;
 	border-top: 1px solid black;
 	grid-column-start: 2;
-	grid-column-end: 5;
+	grid-column-end: 6;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -126,9 +126,13 @@ html, body {
 }
 
 .box_cover {
-	width: 100%;
-	height: 100%;
 	position: absolute;
+	font-family: 'Catamaran', sans-serif;
+	font-weight: 800;
+	font-size: 128px;
+	grid-column-start: 2;
+	grid-column-end: 6;
+	opacity: 0;
 	z-index: 10;
 }
 
@@ -137,7 +141,8 @@ html, body {
 	font-weight: 800;
 	font-size: 128px;
 	grid-column-start: 2;
-	grid-column-end: 5;
+	grid-column-end: 6;
+	transition: 0.5s ease-in-out;
 }
 
 
@@ -160,8 +165,8 @@ html, body {
 	width: 50vw;
 	z-index: 5;
 	object-fit: cover;
-	grid-column-start: 3;
-	grid-column-end: 3;
+	grid-column-start: 4;
+	grid-column-end: 4;
 }
 
 #img_1 {
@@ -180,7 +185,7 @@ html, body {
 	width: 100%;
 	border-top: 1px solid black;
 	grid-column-start: 2;
-	grid-column-end: 5;
+	grid-column-end: 6;
 	grid-row-start: 6;
 	grid-row-end: 6;
 }
