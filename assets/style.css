@@ -18,7 +18,7 @@ html, body {
 .home_title {
 	font-family: 'Catamaran', sans-serif;
 	font-weight: 800;
-	font-size: 128px;
+	font-size: 96px;
 	grid-column-start: 2;
 	grid-column-end: 4;
 	grid-row-start: 3;
@@ -26,7 +26,7 @@ html, body {
 }
 
 .home_description {
-	font-size: 64px;
+	font-size: 48px;
 	grid-column-start: 2;
 	grid-column-end: 4;
 	grid-row-start: 5;
@@ -236,14 +236,6 @@ html, body {
 @media only screen
 and (min-width : 700px)
 and (max-width : 1200px) {
-	.home_title {
-		font-size: 96px;
-	}
-
-	.home_description {
-		font-size: 48px;
-	}
-
 	.about_description {
 		font-size: 36px;
 		grid-column-end: 5;
