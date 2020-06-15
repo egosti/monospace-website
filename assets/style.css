@@ -67,7 +67,7 @@ html, body {
 }
 
 .about_description {
-	font-size: 48px;
+	font-size: 42px;
 	grid-column-start: 2;
 	grid-column-end: 4;
 	text-shadow:
