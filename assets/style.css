@@ -272,6 +272,10 @@ and (max-device-width : 700px) {
 		grid-column-end: 5;
 	}
 
+	#descriptions.page_container {
+		height: 150vh;
+	}
+
 	.page_container_2 {
 		grid-template-rows: 10% 10% 500px 500px 500px 500px auto;
 	}
